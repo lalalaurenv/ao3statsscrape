@@ -1,5 +1,5 @@
 # ao3statsscrape
-Scrape your AO3 (Archive of Our Own) profile to record the stats of your works
+Scrape your AO3 (Archive of Our Own) profile to record the stats of your works over time
 ## Introduction
 This is my first real Python try. There are undoubtedly better ways to do this but it seems to work? This was made and run in a Windows environment.
 
@@ -27,6 +27,7 @@ Based heavily off the tutorial at: https://librarycarpentry.org/lc-webscraping/0
 ### Make a batch file
 * Make a new .bat file and update it to match ao3scrape.bat in this GitHub repository
 * Change all of the directories to the relevant ones on your computer
+* Make sure cd C:\THEFULLPATHOFYOURPROJECT is pointing to the place where scrapy.cfg is on your computer
 ### Set up task scheduler
 * The easiest part!
 * Make a new task in your Windows Task Scheduler to action the batch file daily
