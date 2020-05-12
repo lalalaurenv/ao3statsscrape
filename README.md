@@ -34,4 +34,4 @@ Based heavily off the tutorial at: https://librarycarpentry.org/lc-webscraping/0
 * You can run the task right away to make sure it's working, then wait as it runs each day and collects all your stats for you
 ## Issues / For the future
 * Trying to grab the title of the fic does not return anything?
-* Is it possible/easier to just grab all the details directly from the profile page itself?
+* Is it possible/easier to just grab all the details directly from the profile page itself? Yes, but it's in a list and how do we deal with this in scrapy? How do we deal with list items that don't have certain elements like comments?
