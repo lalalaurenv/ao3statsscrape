@@ -18,3 +18,4 @@ class Ao3ScrapeItem(scrapy.Item):
     kudos = scrapy.Field()
     bookmarks = scrapy.Field()
     comments = scrapy.Field()
+    ficTitle = scrapy.Field()
