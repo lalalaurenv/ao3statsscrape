@@ -18,6 +18,11 @@ class ProfilescraperSpider(scrapy.Spider):
             full_url = full_url + '?view_adult=true'
             print("Found URL: " + full_url)
             yield scrapy.Request(full_url, callback=self.get_details)
+        
+        next_page = response.css('li.next a::attr(href)').get()
+        if next_page is not None:
+            next_page = response.urljoin(next_page)
+            yield scrapy.Request(next_page, callback=self.parse)
 
     def get_details(self, response):
     #make a new item object to store all the details about the fics
